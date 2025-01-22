@@ -3,6 +3,13 @@ import s from "./Categories.module.css";
 const Categories = ({ categories, setSelectedCategory, selectedCategory }) => {
   return (
     <div className={s.categories}>
+      <button
+        onClick={() => setSelectedCategory(null)}
+        className={!selectedCategory ? s.active : s.item}
+      >
+        All
+      </button>
+
       {categories.map((category) => {
         return (
           <button
