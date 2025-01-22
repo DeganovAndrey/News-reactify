@@ -1,5 +1,5 @@
 import s from "./NewsItem.module.css";
-import { formatTimeAgo } from "../helpers/formatTimeAgo";
+import { formatTimeAgo } from "../../helpers/formatTimeAgo";
 
 const NewsItem = ({ item }) => {
   return (
