@@ -1,8 +1,13 @@
 import s from "./NewsBanner.module.css";
-import { formatTimeAgo } from "../../helpers/formatTimeAgo";
 import Image from "./../Image/Image";
+import { INews } from "../../helpers/interfaces";
+import { formatTimeAgo } from "../../helpers/formatTimeAgo";
 
-const NewsBanner = ({ item }) => {
+interface Props {
+  item: INews;
+}
+
+const NewsBanner = ({ item }: Props) => {
   return (
     <div className={s.banner}>
       <Image image={item?.image} />
@@ -13,6 +18,5 @@ const NewsBanner = ({ item }) => {
     </div>
   );
 };
-
 
 export default NewsBanner;
