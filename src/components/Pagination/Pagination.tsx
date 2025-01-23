@@ -1,3 +1,4 @@
+import { useTheme } from "../../context/ThemeContext";
 import { IPaginationProps } from "../../helpers/interfaces";
 import s from "./Pagination.module.css";
 
@@ -8,8 +9,9 @@ const Pagination = ({
   totalPages,
   currentPage,
 }: IPaginationProps) => {
+  const { isDark } = useTheme();
   return (
-    <div className={s.pagination}>
+    <div className={`${s.pagination} ${isDark ? s.dark : s.light}`}>
       <button
         onClick={handlePreviousPage}
         className={s.arrow}
