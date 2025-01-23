@@ -20,7 +20,7 @@ export type SkeletonType = "banner" | "item";
 export type DirectionType = "row" | "column";
 
 export interface CategoriesApiResponse {
-  categories: CategoriesType[]; 
+  categories: CategoriesType[];
   description: string;
   status: string;
 }
