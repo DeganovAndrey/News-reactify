@@ -1,6 +1,16 @@
+import { DirectionType, SkeletonType } from "../../helpers/interfaces";
 import s from "./Skeleton.module.css";
+interface Props {
+  type?: SkeletonType;
+  count?: number;
+  direction?: DirectionType;
+}
 
-const Skeleton = ({ count = 1, type = "banner", direction = "column" }) => {
+const Skeleton = ({
+  count = 1,
+  type = "banner",
+  direction = "column",
+}: Props) => {
   return (
     <>
       {count > 1 ? (

@@ -1,5 +1,5 @@
 import s from "./Header.module.css";
-import { formateDate } from "./../../helpers/formatDate";
+import { formateDate } from "../../helpers/formatDate";
 
 const Header = () => {
   return (
