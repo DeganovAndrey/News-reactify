@@ -1,3 +1,4 @@
+
 import { CategoriesType } from "@/entities/category";
 
 export type SkeletonType = "banner" | "item";
