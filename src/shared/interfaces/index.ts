@@ -1,3 +1,6 @@
+
+import { CategoriesType } from "@/entities/category";
+
 export type SkeletonType = "banner" | "item";
 export type DirectionType = "row" | "column";
 
