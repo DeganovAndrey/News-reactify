@@ -1,5 +1,5 @@
 import LatestNews from "./LatestNews/LatestNews";
-import s from "./Main.module.css";
+import s from "./Page.module.css";
 import NewsByFilters from "./NewsByFilters/NewsByFilters";
 
 const MainPage = () => {
